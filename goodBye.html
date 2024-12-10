@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodbye | ESP</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Animation */
+        @keyframes moveDots {
+            0% {
+                transform: translateX(0) translateY(0);
+            }
+            50% {
+                transform: translateX(150px) translateY(150px);
+            }
+            100% {
+                transform: translateX(0) translateY(0);
+            }
+        }
+
+        /* Fullscreen blackout effect */
+        .blackout {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 999;  /* Ensure it covers the entire screen */
+        }
+
+        /* Animation for the dots */
+        .dot {
+            position: absolute;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            z-index: 1000; /* Ensure dots are above blackout */
+            animation: moveDots 2s infinite;
+        }
+
+        .dot1 {
+            background-color: #ff4081; /* Pink */
+            animation-delay: 0s;
+        }
+
+        .dot2 {
+            background-color: #ff9800; /* Orange */
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 h-screen flex justify-center items-center relative overflow-hidden">
+
+    <!-- Page Content -->
+    <div class="text-center px-6 z-10">
+        <h1 class="text-5xl md:text-6xl font-bold text-white drop-shadow-lg mb-4">
+            Goodbye 👋
+        </h1>
+        <p class="text-lg md:text-xl text-white/90 font-medium drop-shadow-md mb-6">
+            **Our exams have ended on December 11th!** <br>  
+            We've done our best to assist you with all the materials. <br>  
+            From Math to Digital Technology Exam suggestions, we’ve got it all covered. <br>  
+            We’ll meet again in 2025 with more help! Stay tuned and best of luck in your journey!  
+        </p>
+
+        <button 
+            onclick="triggerGoodbye()"
+            class="px-6 py-3 bg-white text-pink-600 font-semibold text-lg rounded-full shadow-lg hover:scale-105 transform transition-all duration-300">
+            Home
+        </button>
+
+        <a href="teamMember.html">
+            <button
+                class="px-6 py-3 bg-white text-pink-600 font-semibold text-lg rounded-full shadow-lg hover:scale-105 transform transition-all duration-300 m-2">
+                Team Members
+            </button>
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function triggerGoodbye() {
+            let blackout = document.createElement('div');
+            blackout.classList.add('blackout');
+            document.body.appendChild(blackout);
+
+            let dot1 = document.createElement('div');
+            dot1.classList.add('dot', 'dot1');
+            let dot2 = document.createElement('div');
+            dot2.classList.add('dot', 'dot2');
+            document.body.appendChild(dot1);
+            document.body.appendChild(dot2);
+
+            setTimeout(() => {
+                blackout.remove();  
+                dot1.remove();      
+                dot2.remove();      
+
+                setTimeout(() => {
+                    setTimeout(() => {
+                        window.location.href = "index.html"; 
+                    }, 200);
+                }, 500); 
+            }, 2000); 
+        }
+    </script>
+
+<script>
+  if (localStorage.getItem('visitedGoodbye') === 'true') {
+    window.location.href = 'index.html';  
+  } else {
+    localStorage.setItem('visitedGoodbye', 'true');
+  }
+</script>
+</body>
+</html>

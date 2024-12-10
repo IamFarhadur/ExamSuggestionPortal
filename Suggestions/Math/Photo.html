@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Suggestion - Question & Answer Photos</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    /* Custom background color variables */
+    :root {
+      --primary: #E5E3D4;
+      --secondary: #9ABF80;
+      --accent: #6A669D;
+      --background: #1C325B;
+    }
+
+    /* Extending Tailwind for custom background colors */
+    @layer base {
+      body {
+        background-color: var(--background);
+        color: #E5E3D4; /* Custom text color */
+      }
+
+      .bg-primary {
+        background-color: var(--primary);
+      }
+
+      .bg-secondary {
+        background-color: var(--secondary);
+      }
+
+      .bg-accent {
+        background-color: var(--accent);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-secondary to-accent py-20 text-center text-background">
+    <div class="container mx-auto px-5">
+      <h1 class="text-4xl font-bold mb-4">Math Suggestions & Guidebook</h1>
+      <p class="text-lg mb-8">Upload and view your question and answer images here. A visual guide to help you prepare for your exam.</p>
+    </div>
+  </section>
+
+  <!-- Question & Answer Photos Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-5 text-center">
+      <h2 class="text-2xl font-bold bg-primary text-gray-700 mb-10">Question & Answer Photos</h2>
+
+      <!-- Card for Each Question & Answer -->
+      <section class="p-4 mb-6 bg-gray-200 rounded-lg shadow-md">
+        <div class="container mx-auto text-center">
+          <img src="img/1.jpeg" alt="Question 1" class="w-full h-auto rounded-lg">
+        </div>
+      </section>
+        <section class="p-4 mb-6 bg-gray-200 rounded-lg shadow-md">
+            <div class="container mx-auto text-center">
+              <img src="img/2.jpeg" alt="Question 1" class="w-full h-auto rounded-lg">
+            </div>
+        </section>
+        <section class="p-4 mb-6 bg-gray-200 rounded-lg shadow-md">
+            <div class="container mx-auto text-center">
+              <img src="img/3.jpeg" alt="Question 1" class="w-full h-auto rounded-lg">
+            </div>
+        </section>
+        <section class="p-4 mb-6 bg-gray-200 rounded-lg shadow-md">
+            <div class="container mx-auto text-center">
+              <img src="img/4.jpeg" alt="Question 1" class="w-full h-auto rounded-lg">
+            </div>
+        </section>
+        <section class="p-4 mb-6 bg-gray-200 rounded-lg shadow-md">
+            <div class="container mx-auto text-center">
+              <img src="img/5.jpeg" alt="Question 1" class="w-full h-auto rounded-lg">
+            </div>
+        </section>
+        <section class="p-4 mb-6 bg-gray-200 rounded-lg shadow-md">
+            <div class="container mx-auto text-center">
+              <img src="img/6.jpeg" alt="Question 1" class="w-full h-auto rounded-lg">
+            </div>
+        </section>
+
+    </div>
+  </section>
+
+</body>
+</html>

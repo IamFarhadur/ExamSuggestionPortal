@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Suggestion Portal | 2024</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <meta name="description" content="A Website to get the best exam suggestions for your upcoming Exam.">
+  <meta name="keywords" content="Exam Suggestions, Study Portal, Exam Preparation">
+  <!-- <link rel="stylesheet" href="/style.css"> -->
+
+  <!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-messaging.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js" integrity="sha256-1m4qVbsdcSU19tulVTbeQReg0BjZiW6yGffnlr/NJu4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css" integrity="sha256-qWVM38RAVYHA4W8TAlDdszO1hRaAq0ME7y2e9aab354=" crossorigin="anonymous">
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Pacifico&display=swap');
+  </style>
+
+<!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6QJC2V9QEB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6QJC2V9QEB');
+</script>
+<!-------------------->
+
+<!-- Manifest  -->
+<link rel="manifest" href="/manifest.json">
+
+</head>
+
+
+<body class="bg-gray-900 text-white">
+<!-- Header -->
+<header class="bg-gray-900 py-4 border-b border-purple-500 shadow-lg">
+  <nav class="container mx-auto flex justify-between items-center text-sm">
+    <h1 class="text-2xl font-[Pacifico] text-purple-300">Exam Suggestions Portal</h1>
+    <div class="flex items-center space-x-6">
+      <!-- Desktop Navigation Links -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#" class="hover:text-teal-300 font-medium">Home</a></li>
+        <li><a href="#suggestions" class="hover:text-teal-300 font-medium">Suggestions</a></li>
+        <li id="username-section" class="hidden">
+          <span id="username"></span>
+          <a href="#" id="logout">Logout</a></li>
+        <li id="login-link">
+          <a href="/signup.html">Signup</a>
+        </li>
+      </ul>
+      <!-- Mobile Burger Icon -->
+      <button class="md:hidden text-white focus:outline-none" id="burger-icon">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden flex-col absolute top-0 right-0 w-full bg-gray-900 text-white py-4 space-y-4 shadow-lg z-10" id="mobile-menu">
+      <a href="#" class="block px-6 py-2 text-lg font-medium hover:text-teal-300">Home</a>
+      <a href="#suggestions" class="block px-6 py-2 text-lg font-medium hover:text-teal-300">Suggestions</a>
+      <a href="/signup.html" class="block px-6 py-2 text-lg font-medium hover:text-teal-300">Sign up</a>
+    </div>
+  </nav>
+</header>
+
+<script>
+  document.getElementById('burger-icon').addEventListener('click', function () {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+<!-- Main Content -->
+<main class="container mx-auto mt-20 flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-12">
+  <div class="text-center lg:text-left lg:w-1/2 animate__animated animate__slideInLeft">
+    <h2 class="text-4xl font-[Pacifico] text-teal-300">Welcome to</h2>
+    <h1 class="text-5xl font-bold text-purple-400 mt-2">Exam Suggestion Portal</h1>
+    <p class="text-xl font-medium text-gray-400 mt-3">Get ready for your next exam!</p>
+    <h3 class="text-3xl font-bold text-purple-400 mt-2">Digital Technology</h3>
+    <div class="mt-8">
+      <a href="/Suggestions/dt/index.html" class="bg-purple-500 hover:bg-teal-400 text-gray-900 font-semibold px-8 py-3 rounded-lg shadow-lg transition duration-300">
+        Get Now!
+      </a>
+    </div>
+  </div>
+  <div class="animate__animated animate__zoomIn">
+    <img src="images/Suggestion.png" alt="Exam Suggestion" class="rounded-lg shadow-xl">
+  </div>
+</main>
+
+<!-- Suggestions Section -->
+<section id="suggestions" class="container mx-auto mt-20 p-8 bg-gray-800 rounded-lg shadow-lg">
+  <h2 class="text-3xl font-bold text-teal-400 text-center mb-6">Exam Suggestions</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-[#4A5568] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <h3 class="text-xl font-semibold text-teal-400">Math Suggestions</h3>
+      <p class="text-sm mt-2">Get the best preparation for math exam.</p>
+      <a href="/Suggestions/Math/index.html" class="mt-4 inline-block text-teal-400 font-medium hover:underline">Read More</a>
+    </div>
+    <div class="bg-[#4A5568] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <h3 class="text-xl font-semibold text-teal-400">English Suggestions</h3>
+      <p class="text-sm mt-2">Get an A+ in Most Critical Subject</p>
+      <a href="/Suggestions/English/index.html" class="mt-4 inline-block text-teal-400 font-medium hover:underline">Read More</a>
+    </div>
+    <div class="bg-[#4A5568] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <h3 class="text-xl font-semibold text-teal-400">Bangla Suggestions</h3>
+      <p class="text-sm mt-2">So Critical Subject...</p>
+      <a href="/Suggestions/bangla/index.html" class="mt-4 inline-block text-teal-400 font-medium hover:underline">Read More</a>
+    </div>
+    <div class="bg-[#4A5568] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <h3 class="text-xl font-semibold text-teal-400">Wellbeing Suggestions</h3>
+      <p class="text-sm mt-2">Easy Peasy Lemon Squeezy</p>
+      <a href="/Suggestions/wellbeing/index.html" class="mt-4 inline-block text-teal-400 font-medium hover:underline">Read More</a>
+    </div>
+    <div class="bg-[#4A5568] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <h3 class="text-xl font-semibold text-teal-400">Art & Culture Suggestions</h3>
+      <p class="text-sm mt-2">Easy but ahm...</p>
+      <a href="/Suggestions/art&culture/index.html" class="mt-4 inline-block text-teal-400 font-medium hover:underline">Read More</a>
+    </div>
+    <div class="bg-[#4A5568] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <h3 class="text-xl font-semibold text-teal-400">History & Social Exam Suggestions</h3>
+      <p class="text-sm mt-2">Be Ready for Write..100 Page</p>
+      <a href="/Suggestions/H&SS/index.html" class="mt-4 inline-block text-teal-400 font-medium hover:underline">Read More</a>
+    </div>
+    <div class="bg-[#4A5568] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <h3 class="text-xl font-semibold text-teal-400">Science Exam Suggestions(Plus)</h3>
+      <p class="text-sm mt-2">Can be easier</p>
+      <a href="/Suggestions/sciencePremium/index.html" class="mt-4 inline-block text-teal-400 font-medium hover:underline">Read More</a>
+    </div>
+    <div class="bg-[#4A5568] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <h3 class="text-xl font-semibold text-teal-400">Live & Livelihood Exam Suggestions</h3>
+      <p class="text-sm mt-2">We are now land Officer</p>
+      <a href="/Suggestions/live&livelihood/index.html" class="mt-4 inline-block text-teal-400 font-medium hover:underline">Read More</a>
+    </div>
+    <div class="bg-[#4A5568] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <h3 class="text-xl font-semibold text-teal-400">Digital Technology Exam Suggestions</h3>
+      <p class="text-sm mt-2">Easy to hear..But hard to write 🥲</p>
+      <a href="/Suggestions/dt/index.html" class="mt-4 inline-block text-teal-400 font-medium hover:underline">Read More</a>
+    </div>
+    <div class="bg-[#4A5568] p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <h3 class="text-xl font-semibold text-teal-400">Digital Technology Exam Suggestions(plus)</h3>
+      <p class="text-sm mt-2">Easy to hear..But hard to write 🥲</p>
+      <a href="/Suggestions/dt/topSuggestion/index.html" class="mt-4 inline-block text-teal-400 font-medium hover:underline">Read More</a>
+    </div>
+  </div>
+  <div class="text-center mt-8">
+    <button id="add-suggestion-btn" class="bg-teal-400 hover:bg-purple-500 text-gray-900 font-semibold px-8 py-3 rounded-lg shadow-lg transition duration-300">
+      Joh hoga dekha jayega!!
+    </button>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 py-4 mt-20 text-center text-sm border-t border-purple-500">
+  <p class="text-gray-400">© 2024 Exam Suggestion Portal. All Right Reserved |
+      Developed by <a href="https://farhadurrahman.xyz/" target="_blank" class="font-bold">Farhadur Rahman</a> | 
+      Join <a href="https://www.facebook.com/share/g/15KWxi1CBT/" target="_blank" class="font-bold">BTRIHS SSC-2026</a> For more.</p>
+</footer>
+
+
+  <script src="app.js"> </script>
+
+  <script type="module">
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyA7yEXQu9Lm1Ki63_6Edc7-WvMdFW-nZP0",
+      authDomain: "examsuggestionportal-d23cf.firebaseapp.com",
+      projectId: "examsuggestionportal-d23cf",
+      storageBucket: "examsuggestionportal-d23cf.firebasestorage.app",
+      messagingSenderId: "487126173475",
+      appId: "1:487126173475:web:fd05ca39e17fc487666e96"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+  <script>
+
+    setTimeout(function() {
+      window.location.href = "goodBye.html"; 
+    }, 5000);
+  </script>
+  
+
+</body>
+
+</html>

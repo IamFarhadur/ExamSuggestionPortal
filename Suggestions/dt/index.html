@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Technology Exam Suggestions</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <meta name="description" content="Prepare effectively withDigital Technology Exam Suggestions for Class 9.">
+  <meta name="keywords" content="Exam Suggestions, Education, Study Guide, Tips">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;0;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- SweetAlert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css">
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: '#121212',
+            gold: '#D4AF37',
+            lightgold: '#FFD700',
+            darkgold: '#B8860B',
+            grayish: '#1E1E1E',
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Poppins', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-dark text-gold font-body">
+  <!-- Header -->
+  <header class="bg-grayish border-b border-gold py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 md:px-8">
+      <div class="flex">
+        <h1 class="text-3xl font-display font-bold text-lightgold">Digital Technology Suggestions</h1>
+      </div>
+      <nav>
+        <ul class="flex space-x-6 text-base font-medium">
+          <li><a href="/" class="hover:text-lightgold transition">Home</a></li>
+          <li><a href="#Questions" class="hover:text-lightgold transition">Questions</a></li>
+          <li><a href="#" id="logoutBtn" class="hover:text-lightgold transition hidden">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation (Hamburger Menu) -->
+  <div class="lg:hidden p-4">
+    <button id="hamburgerBtn" class="text-lightgold">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+    <div id="mobileMenu" class="hidden">
+      <ul class="flex flex-col space-y-4 text-lg font-medium mt-4">
+        <li><a href="/" class="hover:text-lightgold">Home</a></li>
+        <li><a href="#contentSection" class="hover:text-lightgold">Questions</a></li>
+        <li><a href="#" id="logoutBtnMobile" class="hover:text-lightgold hidden">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Login Section -->
+  <section id="loginSection" class="bg-gradient-to-b from-darkgold to-dark py-20 text-center shadow-lg">
+    <div class="container mx-auto px-6 sm:px-8 md:px-10">
+      <h2 class="text-3xl font-display font-bold mb-6 text-lightgold">Login to Access Content</h2>
+      <form id="loginForm" class="space-y-4 max-w-md mx-auto">
+        <input type="text" id="username" placeholder="Username" class="w-full p-3 text-gray-800 rounded-lg text-sm sm:text-base" required>
+        <input type="password" id="password" placeholder="Password" class="w-full p-3 text-gray-800 rounded-lg text-sm sm:text-base" required>
+        <button type="submit" class="w-full p-3 bg-lightgold text-dark font-semibold rounded-lg text-sm sm:text-base">Login</button>
+      </form>
+      <p class="font-bold mb-6 text-lightgold">Don't have Account..then <a href="/signup.html" class="text-gold mt-4">Signup</a></p>
+    </div>
+  </section>
+
+  <!-- Hero Section (Hidden Until Login) -->
+  <section id="heroSection" class="bg-gradient-to-b from-darkgold to-dark py-20 text-center shadow-lg hidden">
+    <div class="container mx-auto px-6 sm:px-8 md:px-10">
+      <h2 class="text-5xl font-display font-bold mb-6 text-lightgold">Conquer Your Digital Technology Exam</h2>
+      <p class="text-lg font-body mb-6 text-gold">Your ultimate guide to acing Class 9 Digital Technology exams with premium suggestions and guidance.</p>
+      <a href="#contentSection" class="text-dark bg-lightgold font-semibold py-3 px-8 rounded-full hover:bg-gold transition shadow-lg">
+        Explore Questions
+      </a>
+    </div>
+  </section>
+
+  <!-- Content Section (hidden until login) -->
+  <section id="contentSection" class="hidden mt-16 px-4 sm:px-6 md:px-8">
+    <div class="container mx-auto px-6 sm:px-8 md:px-10">
+      <h2 class="text-3xl font-display font-bold mb-6 text-lightgold">Important Questions</h2>
+      <ul class="list-decimal list-inside text-left text-gold text-base leading-relaxed">
+          <li>ওয়েবসাইট ডিজাইনে ওয়েব হোস্টিং এর ভূমিকা লিখ।</li>
+          <li>weeb,wix সম্পর্কে লিখ।</li>
+          <li>IP Address সম্পর্কে আলোচনা কর।</li>
+          <li>অনলাইন ব্যাংকিং সম্পর্কে লিখ।</li>
+          <li>Form, Software, Service Charge, সম্পর্কে লিখ।</li>
+          <li>ওয়েব সার্ভার কি?</li>
+          <li>তিনটি সংখ্যার মধ্যে বড় সংখ্যা নির্ণয়ের কোড লেখা ও প্রিন্ট কর।</li>
+          <li>কম্পাইলার ও ইন্টারপ্রেটরের মধ্যে পার্থক্য লেখা।</li>
+          <li>০+১+২+৩+........+২০ ধারাটির যোগফল নির্ণয়ের Python প্রোগ্রাম For Loop এর মাধ্যমে সমাধান করো।</li>
+          <li>ভেরিয়েবল কি? Float এর সম্পর্কে লেখ।</li>
+          <li>সাইবার নিরাপত্তা আইনের প্রয়োজনীয়তা লিখ।</li>
+          <li>ডিজিটাল মাধ্যমে ব্যক্তিগত তথ্য সুরক্ষার গুরুত্বপূর্ণ দিক লিখ।</li>
+          <li>নেটওয়ার্কের বিভিন্ন লেয়ার ব্যাখ্যা কর।</li>
+          <li>সাইবার অপরাধে কি কি শাস্তির বিধান আছে বর্ণনা কর।</li>
+          <li>জিমেইল আইডির আইপি এড্রেস নির্ণয়ের ধাপ ফ্লোচার্টের মাধ্যমে লিখো।</li>
+          
+          <h2 class="text-3xl font-display font-bold mt-8 mb-6 text-lightgold">সংক্ষিপ্ত প্রশ্ন</h2>
+
+          <li>সাইবার ক্রাইম কি?</li>
+          <li>নেটওয়ার্ক কি?</li>
+          <li>ডাটা ইন্টারসেপশন কি?</li>
+          <li>ডি ডস অ্যাটাক কি?</li>
+          <li>টু ফেক্টর অথেনটিকেশন বলতে কি বুঝায়?</li>
+          <li>হ্যাকিং এর তিনটি কারণ লিখ।</li>
+          <li>টু ফেক্টর অথেনটিকেশন এর সুবিধা কি কি?</li>
+          <li>সাইবার বুলিং কি?</li>
+          <li>স্বচ্ছতা কাকে বলে?</li>
+          <li>জবাবদিহিতা কাকে বলে?</li>
+          <li>অ্যাপ কি?</li>
+          <li>সফটওয়্যার কি?</li>
+          <li>অনলাইন ব্যাংকিং কাকে বলে?</li>
+          <li>ফর্ম কি?</li>
+          <li>সার্ভিস চার্জ কাকে বলে?</li>
+          <li>ওয়েবসাইট ডোমেইন কি?</li>
+          <li>ওয়েবসাইট হোস্টিং কাকে বলে?</li>
+          <li>আইপি এড্রেস কাকে বলে? একটি আইপি এড্রেস লেখ।</li>
+          <li>ওয়ার্ডপ্রেস কি? ওয়ার্ডপ্রেসের সুবিধা লেখ।</li>
+          <li>প্রোগ্রামিং ভাষা কি?</li>
+          <li>অনুবাদক প্রোগ্রাম কাকে বলে?</li>
+          <li>কম্পাইলর কি?</li>
+          <li>ইন্টারপ্রেটর কি?</li>
+          <li>পাইথন কি?</li>
+          <li>ভেরিয়েবল কাকে বলে?</li>
+          <li>int, float, str, bool ডাটা টাইপ কাকে বলে?</li>
+          <li>টাইপ কাস্টিং কি?</li>
+          <li>লুপ কাকে বলে?</li>
+          <li>ডাটা টাইপ কত প্রকার ও কি কি?</li>
+          <li>হার্ডওয়ার কাকে বলে?</li>
+          <li>ডিজিটাল নেটওয়ার্ক কাকে বলে?</li>
+          <li>টপোলজি কাকে বলে?</li>
+          <li>মেক ড্রেস কাকে বলে?</li>
+          <li>গ্লোবাল নেটওয়ার্ক কাকে বলে?</li>
+          <li>প্রাইভেট আইপি কাকে বলে?</li>
+          <li>নেটওয়ার্কের ক্ষেত্রে প্রটোকল কাকে বলে?</li>
+          <li>অপটিক্যাল ফাইবার কি?</li>
+          <li>আইপি এড্রেস কয় ধরনের ও কি কি?</li>
+          <li>ফেক নিউজ এর ফলে কি কি ধরনের ক্ষতি হতে পারে?</li>
+          <li>ট্রেইলার কাকে বলে?</li>
+          <li>বাইনারি তথ্য কাকে বলে?</li>
+          <li>ইনফোগ্রাফি কি?</li>
+      </ul>
+  
+      <h2 class="text-3xl font-display font-bold mt-8 mb-6 text-lightgold">রচনামূলক প্রশ্ন</h2>
+      <ul class="list-disc list-inside text-left text-gold text-base leading-relaxed">
+          <li>সাইবার বুলিং কি? সাইবার বুলিং এর প্রভাব কেমন হতে পারে তা বর্ণনা কর।</li>
+          <li>ডিজিটাল ফুড প্রিন্ট কিভাবে পেশাগত জীবনে প্রভাব ফেলে ব্যাখ্যা কর।</li>
+          <li>অনলাইনে প্রতারণা থেকে সুরক্ষা প্রদানের কৌশল কি কি ব্যাখ্যা কর।</li>
+          <li>অনলাইনে ব্যক্তিগত তথ্য সুরক্ষিত রাখার কৌশল কি কি।</li>
+          <li>নন ডিজিটাল এবং ডিজিটাল মাধ্যমে ব্যক্তিগত তথ্যের নিরাপত্তা সংরক্ষণের জন্য একটি তালিকা তৈরি কর।</li>
+          <li>ডিজিটাল মাধ্যমে ফেইক নিউজ রোধ করতে যে পদক্ষেপ নেওয়া যেতে পারে তার একটি তালিকা তৈরি কর।</li>
+          <li>সামাজিক মিডিয়া ডাটা সুরক্ষার উপায় কি কি? ব্যাখ্যা কর।</li>
+          <li>তথ্য অধিকার আইন ২০০৯ অনুসারে একজন নাগরিক কি কি সুবিধা পেতে পারেন।</li>
+          <li>বাংলাদেশে কি কি নাগরিক সেবায় ডিজিটাল পদ্ধতি ব্যবহার করা হয়? ডিজিটাল পদ্ধতির প্রচলন থাকায় নাগরিকদের কি কি সুবিধা হচ্ছে?</li>
+          <li>বাংলাদেশের কোন কোন নাগরিক সেবায় ডিজিটাল প্রযুক্তি ব্যবহার করা হয়? বর্ণনা কর।</li>
+          <li>ওয়েবসাইট এর ক্ষেত্রে ডোমেন নেম কেন গুরুত্বপূর্ণ? ডোমেন নেম নির্বাচনের সময় কোন বিষয়গুলো বিবেচনা করা উচিত?</li>
+          <li>ডোমেইন-নেমের প্রকারভেদ ব্যাখ্যা কর।</li>
+          <li>ওয়েবসাইট হোস্টিং করা হয় কিভাবে?</li>
+          <li>তিনটি সংখ্যার মধ্যে বড় সংখ্যাটি প্রিন্ট করার কোড লিখ।</li>
+          <li>অনুবাদক প্রোগ্রাম গুলোর মধ্যে কোনটি বেশি লাভজনক বলে তুমি মনে কর? ব্যাখ্যা কর।</li>
+          <li>কম্পাইলার ও ইন্টারপ্রেটরের মধ্যে পার্থক্য লিখ।</li>
+          <li>ভেরিয়েবলের নামকরণের সময় কোন দিকগুলো খেয়াল রাখতে হয় ব্যাখ্যা কর।</li>
+          <li>অনুবাদক প্রোগ্রামের প্রয়োজনীয়তা ব্যাখ্যা কর।</li>
+          <li>আইপি এড্রেসের সুবিধা সম্পর্কে লিখ।</li>
+          <li>নিজের ডিভাইসের আইপি এড্রেস নির্ণয় করার ধাপসমূহ ফ্লো চার্টের মাধ্যমে প্রকাশ কর।</li>
+      </ul>
+  </div>
+  
+
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (1).jpeg" alt="Question 1" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (2).jpeg" alt="Question 2" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (3).jpeg" alt="Question 3" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (4).jpeg" alt="Question 4" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (5).jpeg" alt="Question 5" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (6).jpeg" alt="Question 6" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (7).jpeg" alt="Question 7" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (8).jpeg" alt="Question 8" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (9).jpeg" alt="Question 9" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (10).jpeg" alt="Question 10" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (11).jpeg" alt="Question 11" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (12).jpeg" alt="Question 12" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (13).jpeg" alt="Question 12" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (14).jpeg" alt="Question 12" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (15).jpeg" alt="Question 12" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (16).jpeg" alt="Question 12" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (17).jpeg" alt="Question 12" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (18).jpeg" alt="Question 12" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (19).jpeg" alt="Question 12" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (20).jpeg" alt="Question 12" class="w-full rounded-md">
+            </div>
+        </div>
+      </div>
+  </section>
+
+    <!-- Content Section (hidden until login) -->
+
+
+  <!-- Notes and Credit -->
+  <section class="py-12 bg-gradient-to-t from-black to-dark shadow-inner">
+    <div class="container mx-auto px-6 sm:px-8 md:px-10 text-center">
+      <h2 class="text-2xl font-display font-semibold text-lightgold mb-4">Important Note & Credit</h2>
+      <p class="text-gold text-base mb-4">
+        Questions might come from the <span class="text-lightgold font-medium">Lecter </span>Guide. Follow Lecter Guide 565 Page 2nd Creative Question.
+      </p>
+      <p class="text-gold text-base mb-4 font-bold">
+        এই প্রশ্নগুলোর বাইরে থেকে কোনো প্রশ্ন এলে কর্তৃপক্ষ দায়ী থাকবে না।
+      </p>
+      <p class="text-gold text-base">
+        Helped by: <span class="text-lightgold font-medium">Deb Jyoti Arindom & Tasin Ahmed</span>
+      </p>
+      <p class="text-gold text-base">
+        Sorry for Delay..
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-gold py-8">
+    <div class="container mx-auto text-center text-sm">
+      <p class="text-gold">
+        © 2024 Exam Suggestion Portal. All Rights Reserved |
+        Developed by: <a href="https://farhadurrahman.xyz/" class="text-lightgold font-bold hover:text-gold">Farhadur Rahman</a> |
+        Join <a href="https://www.facebook.com/share/g/15KWxi1CBT/" class="text-lightgold font-bold hover:text-gold">BTRIHS SSC-2026</a>.
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+    // Toggle mobile menu
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Login and Logout Functionality
+    const loginForm = document.getElementById('loginForm');
+    const loginSection = document.getElementById('loginSection');
+    const contentSection = document.getElementById('contentSection');
+    const logoutBtn = document.getElementById('logoutBtn');
+    const logoutBtnMobile = document.getElementById('logoutBtnMobile');
+    const heroSection = document.getElementById('heroSection');
+
+    const users = {
+      'admin': ':)',
+      'Muttakin': '*121*1*4#',
+      'arindom': 'arindom_2010',
+      'ssfm411418@gmail.com': '$SYL_55@',
+      'tasin_ahmed': '-_-',
+      'faiaz': 'Faiaz@1',
+      'Muhin the boss': 'muhinmama',
+      'Fahim': 'fahimahmed',
+      'Pranto kahar': 'pranto123454321',
+      'Lil Cutie': 'protik',
+      'Apurbo': '321098',
+      'Pranto Kahar': '13628420',
+      'Muhin': 'muhin201',
+      'Sahitya': 'done_1',
+      'nahid': 'Nahid@#38',
+      'Sojib': 'sojib25',
+      'Protik': 'protik',
+      'arindom': 'hrt2meLXzv',
+    };
+
+    loginForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (users[username] && users[username] === password) {
+        loginSection.classList.add('hidden');
+        contentSection.classList.remove('hidden');
+        heroSection.classList.remove('hidden');
+        Swal.fire({
+          title: 'Welcome Back',
+          text: 'Welcome to Digital Technology Exam Suggestion',
+          icon: 'success',
+        });
+        logoutBtn.classList.remove('hidden');
+        logoutBtnMobile.classList.remove('hidden');
+      } else {
+        Swal.fire({
+          title: 'Enemy Spotted',
+          text: 'Who are you?',
+          icon: 'error',
+        });
+      }
+    });
+
+    logoutBtn.addEventListener('click', function() {
+      loginSection.classList.remove('hidden');
+      contentSection.classList.add('hidden');
+      heroSection.classList.add('hidden');
+      Swal.fire({
+        title: 'Logged Out',
+        text: 'You have been logged out.',
+        icon: 'info',
+      });
+      logoutBtn.classList.add('hidden');
+      logoutBtnMobile.classList.add('hidden');
+    });
+
+    logoutBtnMobile.addEventListener('click', function() {
+      loginSection.classList.remove('hidden');
+      contentSection.classList.add('hidden');
+      heroSection.classList.add('hidden');
+      Swal.fire({
+        title: 'Logged Out',
+        text: 'You have been logged out.',
+        icon: 'info',
+      });
+      logoutBtn.classList.add('hidden');
+      logoutBtnMobile.classList.add('hidden');
+    });
+
+
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        const src = img.src;
+        const modal = document.createElement('div');
+        modal.style.position = 'fixed';
+        modal.style.top = '0';
+        modal.style.left = '0';
+        modal.style.width = '100%';
+        modal.style.height = '100%';
+        modal.style.background = 'rgba(0, 0, 0, 0.7)';
+        modal.style.display = 'flex';
+        modal.style.alignItems = 'center';
+        modal.style.justifyContent = 'center';
+        modal.style.zIndex = '9999';
+  
+        const fullImage = document.createElement('img');
+        fullImage.src = src;
+        fullImage.style.maxWidth = '90%';
+        fullImage.style.maxHeight = '90%';
+  
+        modal.appendChild(fullImage);
+        modal.addEventListener('click', () => modal.remove());
+        document.body.appendChild(modal);
+      });
+    });
+
+  </script>
+
+</body>
+</html>

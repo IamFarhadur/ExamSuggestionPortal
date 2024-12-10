@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Technology Exam Suggestions</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <meta name="description" content="Prepare effectively withDigital Technology Exam Suggestions for Class 9.">
+  <meta name="keywords" content="Exam Suggestions, Education, Study Guide, Tips">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;0;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- SweetAlert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css">
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: '#121212',
+            gold: '#D4AF37',
+            lightgold: '#FFD700',
+            darkgold: '#B8860B',
+            grayish: '#1E1E1E',
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Poppins', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-dark text-gold font-body">
+  <!-- Header -->
+  <header class="bg-grayish border-b border-gold py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 md:px-8">
+      <div class="flex">
+        <h1 class="text-3xl font-display font-bold text-lightgold">Digital Technology Suggestions+</h1>
+      </div>
+      <nav>
+        <ul class="flex space-x-6 text-base font-medium">
+          <li><a href="/" class="hover:text-lightgold transition">Home</a></li>
+          <li><a href="#Questions" class="hover:text-lightgold transition">Questions</a></li>
+          <li><a href="#" id="logoutBtn" class="hover:text-lightgold transition hidden">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation (Hamburger Menu) -->
+  <div class="lg:hidden p-4">
+    <button id="hamburgerBtn" class="text-lightgold">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+    <div id="mobileMenu" class="hidden">
+      <ul class="flex flex-col space-y-4 text-lg font-medium mt-4">
+        <li><a href="/" class="hover:text-lightgold">Home</a></li>
+        <li><a href="#contentSection" class="hover:text-lightgold">Questions</a></li>
+        <li><a href="#" id="logoutBtnMobile" class="hover:text-lightgold hidden">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Login Section -->
+  <section id="loginSection" class="bg-gradient-to-b from-darkgold to-dark py-20 text-center shadow-lg">
+    <div class="container mx-auto px-6 sm:px-8 md:px-10">
+      <h2 class="text-3xl font-display font-bold mb-6 text-lightgold">Login to Access Content</h2>
+      <form id="loginForm" class="space-y-4 max-w-md mx-auto">
+        <input type="text" id="username" placeholder="Username" class="w-full p-3 text-gray-800 rounded-lg text-sm sm:text-base" required>
+        <input type="password" id="password" placeholder="Password" class="w-full p-3 text-gray-800 rounded-lg text-sm sm:text-base" required>
+        <button type="submit" class="w-full p-3 bg-lightgold text-dark font-semibold rounded-lg text-sm sm:text-base">Login</button>
+      </form>
+      <p class="font-bold mb-6 text-lightgold">Don't have Account..then <a href="/signup.html" class="text-gold mt-4">Signup</a></p>
+    </div>
+  </section>
+
+  <!-- Hero Section (Hidden Until Login) -->
+  <section id="heroSection" class="bg-gradient-to-b from-darkgold to-dark py-20 text-center shadow-lg hidden">
+    <div class="container mx-auto px-6 sm:px-8 md:px-10">
+      <h2 class="text-5xl font-display font-bold mb-6 text-lightgold">Conquer Your Digital Technology Exam</h2>
+      <p class="text-lg font-body mb-6 text-gold">Your ultimate guide to acing Class 9 Digital Technology exams with premium suggestions and guidance.</p>
+      <a href="#contentSection" class="text-dark bg-lightgold font-semibold py-3 px-8 rounded-full hover:bg-gold transition shadow-lg">
+        Explore Questions
+      </a>
+    </div>
+  </section>
+
+  <!-- Content Section (hidden until login) -->
+  <section id="contentSection" class="hidden mt-16 px-4 sm:px-6 md:px-8">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (1).jpeg" alt="Question 1" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (2).jpeg" alt="Question 2" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (3).jpeg" alt="Question 3" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (4).jpeg" alt="Question 4" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (5).jpeg" alt="Question 5" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (6).jpeg" alt="Question 6" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (7).jpeg" alt="Question 7" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (8).jpeg" alt="Question 8" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (9).jpeg" alt="Question 9" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (10).jpeg" alt="Question 10" class="w-full rounded-md">
+            </div>
+            <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+              <img src="img/IMG (11).jpeg" alt="Question 11" class="w-full rounded-md">
+            </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Notes and Credit -->
+  <section class="py-12 bg-gradient-to-t from-black to-dark shadow-inner">
+    <div class="container mx-auto px-6 sm:px-8 md:px-10 text-center">
+      <h2 class="text-2xl font-display font-semibold text-lightgold mb-4">Important Note & Credit</h2>
+      <p class="text-gold text-base mb-4 font-bold">
+        এই প্রশ্নগুলোর বাইরে থেকে কোনো প্রশ্ন এলে কর্তৃপক্ষ দায়ী থাকবে না।
+      </p>
+      <p class="text-gold text-base">
+        Helped by: <span class="text-lightgold font-medium">Sahitya Sharma</span>
+      </p>
+      <p class="text-gold text-base">
+        Sorry for Delay..
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-gold py-8">
+    <div class="container mx-auto text-center text-sm">
+      <p class="text-gold">
+        © 2024 Exam Suggestion Portal. All Rights Reserved |
+        Developed by: <a href="https://farhadurrahman.xyz/" class="text-lightgold font-bold hover:text-gold">Farhadur Rahman</a> |
+        Join <a href="https://www.facebook.com/share/g/15KWxi1CBT/" class="text-lightgold font-bold hover:text-gold">BTRIHS SSC-2026</a>.
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+    // Toggle mobile menu
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Login and Logout Functionality
+    const loginForm = document.getElementById('loginForm');
+    const loginSection = document.getElementById('loginSection');
+    const contentSection = document.getElementById('contentSection');
+    const logoutBtn = document.getElementById('logoutBtn');
+    const logoutBtnMobile = document.getElementById('logoutBtnMobile');
+    const heroSection = document.getElementById('heroSection');
+
+    const users = {
+      'admin': ':)',
+      'Muttakin': '*121*1*4#',
+      'arindom': 'arindom_2010',
+      'ssfm411418@gmail.com': '$SYL_55@',
+      'tasin_ahmed': '-_-',
+      'faiaz': 'Faiaz@1',
+      'Muhin the boss': 'muhinmama',
+      'Alvi': 'a0$4',
+      'Fahim': 'fahimahmed',
+      'Pranto kahar': 'pranto123454321',
+      'Lil Cutie': 'protik',
+      'Apurbo': '321098',
+      'Eartugul Ghazi': 'Er..1212@#**',
+      'eartugul': 'Er607',
+      'Pranto Kahar': '12321',
+      'Muhin': 'muhin201',
+      'Sahitya': 'done_1',
+      'nahid': 'Nahid@#38',
+      'Sojib': 'sojib25',
+    };
+
+    loginForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (users[username] && users[username] === password) {
+        loginSection.classList.add('hidden');
+        contentSection.classList.remove('hidden');
+        heroSection.classList.remove('hidden');
+        Swal.fire({
+          title: 'Login Successful',
+          text: 'Welcome to the Digital Technology Exam Suggestions!',
+          icon: 'success',
+        });
+        logoutBtn.classList.remove('hidden');
+        logoutBtnMobile.classList.remove('hidden');
+      } else {
+        Swal.fire({
+          title: 'Enemy Spotted',
+          text: 'Ke Be Tui? Chintasi Na...',
+          icon: 'error',
+        });
+      }
+    });
+
+    logoutBtn.addEventListener('click', function() {
+      loginSection.classList.remove('hidden');
+      contentSection.classList.add('hidden');
+      heroSection.classList.add('hidden');
+      Swal.fire({
+        title: 'Logged Out',
+        text: 'You have been logged out.',
+        icon: 'info',
+      });
+      logoutBtn.classList.add('hidden');
+      logoutBtnMobile.classList.add('hidden');
+    });
+
+    logoutBtnMobile.addEventListener('click', function() {
+      loginSection.classList.remove('hidden');
+      contentSection.classList.add('hidden');
+      heroSection.classList.add('hidden');
+      Swal.fire({
+        title: 'Logged Out',
+        text: 'You have been logged out.',
+        icon: 'info',
+      });
+      logoutBtn.classList.add('hidden');
+      logoutBtnMobile.classList.add('hidden');
+    });
+
+
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        const src = img.src;
+        const modal = document.createElement('div');
+        modal.style.position = 'fixed';
+        modal.style.top = '0';
+        modal.style.left = '0';
+        modal.style.width = '100%';
+        modal.style.height = '100%';
+        modal.style.background = 'rgba(0, 0, 0, 0.7)';
+        modal.style.display = 'flex';
+        modal.style.alignItems = 'center';
+        modal.style.justifyContent = 'center';
+        modal.style.zIndex = '9999';
+  
+        const fullImage = document.createElement('img');
+        fullImage.src = src;
+        fullImage.style.maxWidth = '90%';
+        fullImage.style.maxHeight = '90%';
+  
+        modal.appendChild(fullImage);
+        modal.addEventListener('click', () => modal.remove());
+        document.body.appendChild(modal);
+      });
+    });
+
+  </script>
+
+</body>
+</html>

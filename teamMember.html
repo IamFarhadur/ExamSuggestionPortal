@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members | ESP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Include Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom Animation */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 min-h-screen flex flex-col justify-between items-center relative overflow-auto">
+    <!-- Animated Floating Elements -->
+    <div class="absolute w-40 h-40 bg-white opacity-20 rounded-full top-10 left-20 animate-[float_6s_infinite]"></div>
+    <div class="absolute w-60 h-60 bg-white opacity-10 rounded-full bottom-20 right-20 animate-[float_8s_infinite]"></div>
+    <div class="absolute w-48 h-48 bg-white opacity-15 rounded-full bottom-10 left-32 animate-[float_10s_infinite]"></div>
+
+    <!-- Page Content -->
+    <div class="text-center px-6 mt-16">
+        <h1 class="text-5xl md:text-6xl font-bold text-white drop-shadow-lg mb-4">
+            Team Members <i class="fas fa-users"></i> <!-- Using Font Awesome Icon -->
+        </h1>
+        <p class="text-lg md:text-xl text-white/90 font-medium drop-shadow-md mb-6">
+            Meet the team behind the Exam Suggestion Portal. These individuals contributed and helped bring this project to life!
+        </p>
+    </div>
+
+    <!-- Team Members Section -->
+    <div class="text-center mt-16 pb-6">
+        <h2 class="text-3xl font-semibold text-white mb-6">Our Amazing Team</h2>
+        <div class="flex justify-center gap-10 flex-wrap">
+            <!-- Member 1 -->
+            <div class="w-40 bg-white p-6 rounded-xl shadow-2xl hover:scale-105 transform transition-all duration-300 hover:bg-pink-100">
+                <img src="Team/FRM.png" alt="Farhadur Rahman" class="rounded-full w-24 h-24 mx-auto mb-4 shadow-lg">
+<a href="https://farhadurrahman.xyz">
+    <p class="text-xl font-semibold text-gray-800">Farhadur Rahman</p>
+    <p class="text-gray-600">Developer</p>
+</a>
+            </div>
+            <!-- Member 2 -->
+            <div class="w-40 bg-white p-6 rounded-xl shadow-2xl hover:scale-105 transform transition-all duration-300 hover:bg-pink-100">
+                <img src="Team/DJA.jpg" alt="Deb Jyoti Arindom" class="rounded-full w-24 h-24 mx-auto mb-4 shadow-lg">
+                <p class="text-xl font-semibold text-gray-800">Deb Jyoti Arindom</p>
+                <p class="text-gray-600">Helped with suggestions</p>
+            </div>
+            <!-- Member 3 -->
+            <div class="w-40 bg-white p-6 rounded-xl shadow-2xl hover:scale-105 transform transition-all duration-300 hover:bg-pink-100">
+                <img src="Team/TA.jpg" alt="Tasin Ahmed" class="rounded-full w-24 h-24 mx-auto mb-4 shadow-lg">
+                <p class="text-xl font-semibold text-gray-800">Tasin Ahmed</p>
+                <p class="text-gray-600">Helped with suggestions</p>
+            </div>
+            <!-- Member 4 -->
+            <div class="w-40 bg-white p-6 rounded-xl shadow-2xl hover:scale-105 transform transition-all duration-300 hover:bg-pink-100">
+                <img src="Team/user.png" alt="Faiaz Ibne Johir" class="rounded-full w-24 h-24 mx-auto mb-4 shadow-lg">
+                <p class="text-xl font-semibold text-gray-800">Faiaz Ibne Johir</p>
+                <p class="text-gray-600">Helped with suggestions</p>
+            </div>
+            <!-- Member 5 -->
+            <div class="w-40 bg-white p-6 rounded-xl shadow-2xl hover:scale-105 transform transition-all duration-300 hover:bg-pink-100">
+                <img src="Team/user.png" alt="Sahitya Sharma" class="rounded-full w-24 h-24 mx-auto mb-4 shadow-lg">
+                <p class="text-xl font-semibold text-gray-800">Sahitya Sharma</p>
+                <p class="text-gray-600">Helped with suggestions</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function returnToHome() {
+            alert('We’ll miss you! Taking you back to Home...');
+            setTimeout(() => {
+                window.location.href = "index.html"; 
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

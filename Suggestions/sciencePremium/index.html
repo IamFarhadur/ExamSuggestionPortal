@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science Exam Suggestions</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <meta name="description" content="Prepare effectively with Science Exam Suggestions for Class 9.">
+  <meta name="keywords" content="Exam Suggestions, Education, Study Guide, Tips">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;0;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- SweetAlert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css">
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: '#121212',
+            gold: '#D4AF37',
+            lightgold: '#FFD700',
+            darkgold: '#B8860B',
+            grayish: '#1E1E1E',
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Poppins', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-dark text-gold font-body">
+  <!-- Header -->
+  <header class="bg-grayish border-b border-gold py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 md:px-8">
+      <h1 class="text-3xl font-display font-bold text-lightgold">Science Suggestions</h1>
+      <nav>
+        <ul class="flex space-x-6 text-base font-medium">
+          <li><a href="/" class="hover:text-lightgold transition">Home</a></li>
+          <li><a href="#Questions" class="hover:text-lightgold transition">Questions</a></li>
+          <li><a href="#" id="logoutBtn" class="hover:text-lightgold transition hidden">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation (Hamburger Menu) -->
+  <div class="lg:hidden p-4">
+    <button id="hamburgerBtn" class="text-lightgold">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+    <div id="mobileMenu" class="hidden">
+      <ul class="flex flex-col space-y-4 text-lg font-medium mt-4">
+        <li><a href="/" class="hover:text-lightgold">Home</a></li>
+        <li><a href="#Questions" class="hover:text-lightgold">Questions</a></li>
+        <li><a href="#" id="logoutBtnMobile" class="hover:text-lightgold hidden">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Login Section -->
+  <section id="loginSection" class="bg-gradient-to-b from-darkgold to-dark py-20 text-center shadow-lg">
+    <div class="container mx-auto px-6 sm:px-8 md:px-10">
+      <h2 class="text-3xl font-display font-bold mb-6 text-lightgold">Login to Access Content</h2>
+      <form id="loginForm" class="space-y-4 max-w-md mx-auto">
+        <input type="text" id="username" placeholder="Username" class="w-full p-3 text-gray-800 rounded-lg text-sm sm:text-base" required>
+        <input type="password" id="password" placeholder="Password" class="w-full p-3 text-gray-800 rounded-lg text-sm sm:text-base" required>
+        <button type="submit" class="w-full p-3 bg-lightgold text-dark font-semibold rounded-lg text-sm sm:text-base">Login</button>
+      </form>
+      <p class="font-bold mb-6 text-lightgold">Don't have Account..then <a href="/signup.html" class="text-gold mt-4">Signup</a></p>
+    </div>
+  </section>
+
+  <!-- Hero Section (Hidden Until Login) -->
+  <section id="heroSection" class="bg-gradient-to-b from-darkgold to-dark py-20 text-center shadow-lg hidden">
+    <div class="container mx-auto px-6 sm:px-8 md:px-10">
+      <h2 class="text-5xl font-display font-bold mb-6 text-lightgold">Conquer Your Science Exam</h2>
+      <p class="text-lg font-body mb-6 text-gold">Your ultimate guide to acing Class 9 Science exams with premium suggestions and guidance.</p>
+      <a href="#Questions" class="text-dark bg-lightgold font-semibold py-3 px-8 rounded-full hover:bg-gold transition shadow-lg">
+        Explore Questions
+      </a>
+    </div>
+  </section>
+
+  <!-- Content Section (hidden until login) -->
+  <section id="contentSection" class="hidden mt-16 px-4 sm:px-6 md:px-8">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center text-lightgold mb-8">Compositional (Scenario-Based) Questions</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (1).JPG" alt="Question 1" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (2).JPG" alt="Question 2" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (3).JPG" alt="Question 3" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (4).JPG" alt="Question 4" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (5).JPG" alt="Question 5" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (6).JPG" alt="Question 6" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (7).JPG" alt="Question 7" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (8).JPG" alt="Question 8" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (9).JPG" alt="Question 9" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (10).JPG" alt="Question 10" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (11).JPG" alt="Question 11" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (12).JPG" alt="Question 12" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (13).JPG" alt="Question 13" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (14).JPG" alt="Question 14" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (15).JPG" alt="Question 15" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (16).JPG" alt="Question 16" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (17).JPG" alt="Question 17" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (18).JPG" alt="Question 18" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (19).JPG" alt="Question 19" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (20).JPG" alt="Question 20" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (21).JPG" alt="Question 21" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (22).JPG" alt="Question 22" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (23).JPG" alt="Question 23" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (24).JPG" alt="Question 24" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (25).JPG" alt="Question 25" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (26).JPG" alt="Question 26" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (27).JPG" alt="Question 27" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (28).JPG" alt="Question 28" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (29).JPG" alt="Question 29" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (30).JPG" alt="Question 30" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (31).JPG" alt="Question 31" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (32).JPG" alt="Question 32" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (33).JPG" alt="Question 33" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (34).JPG" alt="Question 34" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (35).JPG" alt="Question 35" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (36).JPG" alt="Question 36" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (37).JPG" alt="Question 37" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (38).JPG" alt="Question 38" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (39).JPG" alt="Question 39" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (40).JPG" alt="Question 40" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (41).JPG" alt="Question 41" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (42).JPG" alt="Question 42" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (43).JPG" alt="Question 43" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (44).JPG" alt="Question 44" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (45).JPG" alt="Question 45" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (46).JPG" alt="Question 46" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (47).JPG" alt="Question 47" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (48).JPG" alt="Question 48" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (49).JPG" alt="Question 49" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (50).JPG" alt="Question 50" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (51).JPG" alt="Question 51" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (52).JPG" alt="Question 52" class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (53).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (54).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (55).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (56).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (57).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (58).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (59).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (60).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (61).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (62).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (63).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (64).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (65).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (66).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (67).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (68).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (69).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (70).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (71).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (72).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (73).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (74).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (75).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (76).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (77).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (78).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (79).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (80).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (81).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (82).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (83).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (84).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (85).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (86).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (87).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (88).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (89).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (90).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (91).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (92).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (93).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (94).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+          <div class="bg-grayish p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="img/IMG (95).JPG" alt="Question " class="w-full rounded-md">
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notes and Credit -->
+  <section class="py-12 bg-gradient-to-t from-black to-dark shadow-inner">
+    <div class="container mx-auto px-6 sm:px-8 md:px-10 text-center">
+      <h2 class="text-2xl font-display font-semibold text-lightgold mb-4">Important Note & Credit</h2>
+      <p class="text-gold text-base mb-4">
+        Follow the <span class="text-lightgold font-medium">Panjeree Guide</span> and focus on your teacher's materials for better results.
+      </p>
+      <p class="text-gold text-base">
+        Helped by: <span class="text-lightgold font-medium">Faiaz Ibne Johir</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-gold py-8">
+    <div class="container mx-auto text-center text-sm">
+      <p class="text-gold">
+        © 2024 Exam Suggestion Portal. All Rights Reserved |
+        Developed by <a href="https://farhadurrahman.xyz/" class="text-lightgold font-bold hover:text-gold">Farhadur Rahman</a> |
+        Credit: <a href="https://www.facebook.com/deb.jyoti.arindom.2024" class="text-lightgold font-bold hover:text-gold">Deb Jyoti Arindom</a> |
+        Join <a href="https://www.facebook.com/share/g/15KWxi1CBT/" class="text-lightgold font-bold hover:text-gold">BTRIHS SSC-2026</a>.
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+    // Toggle mobile menu
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Login and Logout Functionality
+    const loginForm = document.getElementById('loginForm');
+    const loginSection = document.getElementById('loginSection');
+    const contentSection = document.getElementById('contentSection');
+    const logoutBtn = document.getElementById('logoutBtn');
+    const logoutBtnMobile = document.getElementById('logoutBtnMobile');
+    const heroSection = document.getElementById('heroSection');
+
+    const users = {
+      'Muttakin': '*121*1*4#',
+      'admin': 'mahi',
+      'arindom': 'arindom_2010',
+      'ssfm411418@gmail.com': '$SYL_55@',
+    };
+
+    loginForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (users[username] && users[username] === password) {
+        loginSection.classList.add('hidden');
+        contentSection.classList.remove('hidden');
+        heroSection.classList.remove('hidden');
+        Swal.fire({
+          title: 'Welcome Back',
+          text: 'Welcome to Sciecne Exam Suggestion',
+          icon: 'success',
+        });
+        logoutBtn.classList.remove('hidden');
+        logoutBtnMobile.classList.remove('hidden');
+      } else {
+        Swal.fire({
+          title: 'Enemy Spotted',
+          text: 'Who are you?',
+          icon: 'error',
+        });
+      }
+    });
+
+    logoutBtn.addEventListener('click', function() {
+      loginSection.classList.remove('hidden');
+      contentSection.classList.add('hidden');
+      heroSection.classList.add('hidden');
+      Swal.fire({
+        title: 'Logged Out',
+        text: 'You have been logged out.',
+        icon: 'info',
+      });
+      logoutBtn.classList.add('hidden');
+      logoutBtnMobile.classList.add('hidden');
+    });
+
+    logoutBtnMobile.addEventListener('click', function() {
+      loginSection.classList.remove('hidden');
+      contentSection.classList.add('hidden');
+      heroSection.classList.add('hidden');
+      Swal.fire({
+        title: 'Logged Out',
+        text: 'You have been logged out.',
+        icon: 'info',
+      });
+      logoutBtn.classList.add('hidden');
+      logoutBtnMobile.classList.add('hidden');
+    });
+
+
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        const src = img.src;
+        const modal = document.createElement('div');
+        modal.style.position = 'fixed';
+        modal.style.top = '0';
+        modal.style.left = '0';
+        modal.style.width = '100%';
+        modal.style.height = '100%';
+        modal.style.background = 'rgba(0, 0, 0, 0.7)';
+        modal.style.display = 'flex';
+        modal.style.alignItems = 'center';
+        modal.style.justifyContent = 'center';
+        modal.style.zIndex = '9999';
+  
+        const fullImage = document.createElement('img');
+        fullImage.src = src;
+        fullImage.style.maxWidth = '90%';
+        fullImage.style.maxHeight = '90%';
+  
+        modal.appendChild(fullImage);
+        modal.addEventListener('click', () => modal.remove());
+        document.body.appendChild(modal);
+      });
+    });
+
+  </script>
+
+</body>
+</html>

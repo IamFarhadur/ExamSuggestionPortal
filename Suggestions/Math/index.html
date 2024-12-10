@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Suggestion Portal</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary: #E5E3D4;
+      --secondary: #9ABF80;
+      --accent: #6A669D;
+      --background: #1C325B;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "var(--primary)",
+            secondary: "var(--secondary)",
+            accent: "var(--accent)",
+            background: "var(--background)",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-background text-gray-100">
+
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-secondary to-accent py-20 text-center text-background">
+    <div class="container mx-auto px-5">
+      <h1 class="text-4xl font-bold mb-4">Welcome to the Math Suggestion Portal</h1>
+      <p class="text-lg mb-8">Your ultimate guide to acing the math exam with well-curated suggestions.</p>
+      <a href="#suggestions" class="bg-background text-secondary px-6 py-3 rounded-full font-semibold text-lg shadow-lg hover:bg-accent hover:text-background transition-all duration-300">
+        Explore Suggestions
+      </a>
+    </div>
+  </section>
+
+  <!-- Suggestions Section -->
+  <section id="suggestions" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-2xl font-bold text-primary mb-10">Select Your Suggestion</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <!-- Suggestion 1.0 Card -->
+        <a href="suggestion1.html" class="block bg-secondary p-8 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+          <h3 class="text-xl font-bold text-background mb-2">Math Suggestion 1.0</h3>
+          <p class="text-primary">Compositional-focused suggestions to ace your exam!</p>
+        </a>
+
+        <!-- Suggestion 2.0 Card -->
+        <a href="suggestion2.html" class="block bg-secondary p-8 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+          <h3 class="text-xl font-bold text-background mb-2">Math Suggestion 2.0</h3>
+          <p class="text-primary">Advanced suggestions with short questions & more.</p>
+        </a>
+        <!-- image -->
+        <a href="Photo.html" class="block bg-secondary p-8 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+          <h3 class="text-xl font-bold text-background mb-2">Math Suggestion - Question & Answer Photos</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-primary py-12 text-center">
+    <div class="container mx-auto px-5">
+      <h3 class="text-2xl font-semibold text-background mb-4">Ready to conquer your exams?</h3>
+      <a href="#suggestions" class="bg-secondary text-background px-6 py-3 rounded-lg font-bold hover:bg-accent hover:text-primary transition-all duration-300">
+        Get Started
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-background py-8">
+    <div class="container mx-auto text-center">
+      <p class="text-gray-400 text-sm">&copy; 2024 Farhadur Rahman | All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+</html>

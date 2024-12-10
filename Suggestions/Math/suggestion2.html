@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Suggestion 2.0</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary: #89A8B2;
+      --secondary: #B3C8CF;
+      --accent: #E5E1DA;
+      --background: #F1F0E8;
+    }
+  </style>
+  <script>
+    // Apply the custom color palette to Tailwind classes
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "var(--primary)",
+            secondary: "var(--secondary)",
+            accent: "var(--accent)",
+            background: "var(--background)",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-background text-gray-800">
+  <!-- Header -->
+  <header class="bg-primary text-white py-5 sticky top-0 shadow-md z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Math Suggestion 2.0</h1>
+      <a href="index.html" class="text-white bg-secondary px-4 py-2 rounded shadow hover:bg-gray-600">Back to Home</a>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="container mx-auto mt-10 px-5">
+    <!-- Expression in One Word -->
+    <section>
+      <h2 class="text-xl font-semibold mb-4 text-primary">Expression in One Word</h2>
+      <ul class="space-y-2">
+        <li class="bg-secondary p-3 rounded shadow hover:bg-accent">Model 4: 16, 17</li>
+        <li class="bg-secondary p-3 rounded shadow hover:bg-accent">Model 5: 18</li>
+        <li class="bg-secondary p-3 rounded shadow hover:bg-accent">Model 7: 17, 21, 24, 25</li>
+        <li class="bg-secondary p-3 rounded shadow hover:bg-accent">Model 8: 20, 21, 22</li>
+        <li class="bg-secondary p-3 rounded shadow hover:bg-accent">Model 10: 17</li>
+      </ul>
+    </section>
+
+    <!-- Short Questions -->
+    <section class="mt-6">
+      <h2 class="text-xl font-semibold mb-4 text-primary">Short Questions</h2>
+      <ul class="space-y-2">
+        <li class="bg-secondary p-3 rounded shadow hover:bg-accent">Model 1: ক, চ, জ</li>
+        <li class="bg-secondary p-3 rounded shadow hover:bg-accent">Model 2: গ, জ</li>
+        <li class="bg-secondary p-3 rounded shadow hover:bg-accent">Model 3: ক, ঘ</li>
+        <li class="bg-secondary p-3 rounded shadow hover:bg-accent">Model 4: ঝ</li>
+        <li class="bg-secondary p-3 rounded shadow hover:bg-accent">Model 5: ঝ</li>
+        <li class="bg-secondary p-3 rounded shadow hover:bg-accent">Model 8: চ, ছ</li>
+        <li class="bg-secondary p-3 rounded shadow hover:bg-accent">Model 9: ঘ, ঙ</li>
+      </ul>
+    </section>
+
+    <!-- Download Section -->
+    <section class="mt-6">
+      <h2 class="text-xl font-semibold mb-3 text-primary">Download Suggestion</h2>
+<a href="https://drive.google.com/file/d/10n2HYZeC-BisbBlySXuSYBWovcHiE0xk/view?usp=sharing">
+  <button class="bg-primary text-white px-6 py-3 rounded shadow hover:bg-secondary">
+    Download PDF
+  </button>
+</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-4 mt-10">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Farhadur Rahman | All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+</html>

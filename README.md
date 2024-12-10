@@ -5,7 +5,6 @@ A website designed to provide the best exam suggestions for students preparing f
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Firebase Setup](#firebase-setup)
 - [Setup and Installation](#setup-and-installation)
 - [How to Contribute](#how-to-contribute)
 - [License](#license)
@@ -45,4 +44,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Developed by [Farhadur Rahman](https://farhadurrahman.xyz)
-```

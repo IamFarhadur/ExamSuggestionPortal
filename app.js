@@ -1,11 +1,10 @@
-// পেজ লোড ইভেন্ট
 document.addEventListener('DOMContentLoaded', function () {
   Swal.fire({
-    title: 'এখনই সাইন আপ করুন!', 
-    text: 'বিশেষ পরামর্শ এবং আপডেট পেতে পোর্টালে যোগ দিন।',
+    title: 'Good Bye👋👋', 
+    text: 'Our exam is over',
     icon: 'info', 
     showCancelButton: false, 
-    confirmButtonText: 'সাইন আপ করুন', 
+    confirmButtonText: 'Bye Bye👋👋', 
     background: '#1a202c',
     color: '#ffffff', 
     confirmButtonColor: '#38bdf8', 
@@ -13,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }).then((result) => {
     if (result.isConfirmed) {
 
-      window.location.href = '/signup.html';
+      window.location.href = '/goodBye.html';
     } else {
-      console.log('ব্যবহারকারী সাইন আপ পপআপ বাতিল করেছেন।');
+      console.log('Nothing to Do...');
     }
   });
 });
